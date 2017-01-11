@@ -160,6 +160,10 @@ You can find the configurations in ```<root>/environment```.
 By default pushState, also known as html5 routing, is enabled. The Webpack server is already configured to handle this but many webserver need
 extra confuration to enable this.
 
+## Typings - How to use local version
+This project has no global dependencies and offers npm scripts to run typings, which commonly is installed globally.
+Instead of ```typings install package``` it is possible to do the same (with local typings) by using ```npm run typings -- install package```.
+
 ## Cordova - Mobile Development
 
 ### Installation
@@ -167,6 +171,10 @@ Initiate cordova with the following commands:
 ```shell
 npm run mobile:setup
 ```
+
+### Cordova CLI
+Similar to typings, the locally installed cordova CLI is exposed via npm script.
+```cordova platform add android``` is replaced with ```npm run cordova -- platform add android```.
 
 ### Run and build
 Cordova takes the ```www``` folder source to create the Cordova app. This ```www``` folder is a symlink pointing to the ```dist``` folder.
