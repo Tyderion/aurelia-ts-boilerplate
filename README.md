@@ -165,7 +165,6 @@ extra confuration to enable this.
 ### Installation
 Initiate cordova with the following commands:
 ```shell
-npm install -g cordova
 npm run mobile:setup
 ```
 
